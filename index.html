@@ -5,23 +5,22 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>My Website Portfolio</title>
-      <!-- This tags will be uncommented for the styling page on the next commit -->
-      <!-- <link rel="stylesheet" href="main.css">
-      <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'> -->
+      <link rel="stylesheet" href="main.css">
+      <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     </head>
     <body>
       <!-- This div holds the entire content of the main page to add a common background for it in the styling file -->
       <div class="main-page-background">
         <header class="main-page-header">
-          <h1>John Doe</h1>
+          <h1 class="logo">John Doe</h1>
           <button class="open-menu"><img src="./multimedia/Icon - Menu.svg"></button>
         </header>
       
         <main class="headline">
           <!--All the divs added down below contain other elements inside for flex-related styling purposes-->
           <div class="headline-text">
-            <h1>Laura Jong</h1>
-            <h2>Software Developer</h2>
+            <h1 class="name">Laura Jong</h1>
+            <h2 class="occupation">Software Developer</h2>
           </div>
           <section class="about-text-links">
             <p class="about-text">
@@ -30,8 +29,8 @@
             <img src="./multimedia/Divider.png"  class="divider" alt="A gray line separating both sections">
             <section class="about-links">
               <div class="language-frameworks-container">
-                <div class="language">
-                  <h2>Language</h2>
+                <div class="about-l-section">
+                  <h2 class="about-l-header">Language</h2>
                   <ul>
                     <li><a href="#">Javascript</a></li>
                     <li><a href="#">Ruby</a></li>
@@ -39,8 +38,8 @@
                     <li><a href="#">Css</a></li>
                   </ul>
                 </div>
-                <div class="frameworks">
-                  <h2>Frameworks</h2>
+                <div class="about-l-section">
+                  <h2 class="about-l-header">Frameworks</h2>
                   <ul>
                     <li><a href="#">Bootstrap</a></li>
                     <li><a href="#">Ruby on Rails</a></li>
@@ -50,8 +49,8 @@
                   </ul>
                 </div>            
               </div>
-              <div class="skills">
-                <h2>Skills</h2>
+              <div class="about-l-section">
+                <h2 class="about-l-header">Skills</h2>
                   <ul>
                     <li><a href="#">Codekit</a></li>
                     <li><a href="#">Github</a></li>
@@ -65,14 +64,14 @@
           </section>
           <section class="headline-footer">
             <div class="social-media">
-              <button><img src="./multimedia/githubicon.png"></button>
-              <button><img src="./multimedia/linkedinicon.png"></button>
-              <button><img src="./multimedia/angelist 1.png"></button>
-              <button><img src="./multimedia/twittericon.png"></button>
-              <button><img src="./multimedia/Icon - Medium.png"></button>             
+              <button class="social-icon"><img src="./multimedia/githubicon.png"></button>
+              <button class="social-icon"><img src="./multimedia/linkedinicon.png"></button>
+              <button class="social-icon"><img src="./multimedia/angelist 1.png"></button>
+              <button class="social-icon"><img src="./multimedia/twittericon.png"></button>
+              <button class="social-icon"><img src="./multimedia/Icon - Medium.png"></button>             
             </div>
             <div class="work-element">
-              <p><img src="./multimedia/down-arrow.png">work</p>
+              <p class="work-text"><img src="./multimedia/down-arrow.png">work</p>
             </div>
           </section>
         </main>
