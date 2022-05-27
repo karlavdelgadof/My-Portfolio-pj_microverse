@@ -17,7 +17,6 @@ h2 {
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-  padding: 24px;
 }
 
 .main-page-header {
@@ -45,6 +44,7 @@ h2 {
 .headline {
   display: flex;
   flex-direction: column;
+  padding: 24px;
 }
 
 .headline-text {
