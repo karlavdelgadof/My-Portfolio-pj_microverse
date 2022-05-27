@@ -5,7 +5,7 @@ body {
   margin: 0;
 }
 
-h1, 
+h1,
 h2 {
   margin: 0;
 }
@@ -141,7 +141,7 @@ a {
   gap: 12px;
 }
 
-button, 
+button,
 .social-icon {
   display: flex;
   background: none;
