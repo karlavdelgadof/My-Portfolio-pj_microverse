@@ -66,6 +66,7 @@ h2 {
   font-weight: 500;
   margin: 0;
   padding: 20px 18px;
+  margin-bottom: 20px;
 }
 
 .about-text-links {
@@ -80,12 +81,13 @@ h2 {
   width: 327px;
   height: auto;
   align-self: center;
+  padding-bottom: 10px;
 }
 
 .about-links {
   display: flex;
   flex-direction: column;
-  padding: 20px 15px;
+  padding: 20px 25px;
 }
 
 .language-frameworks-container {
