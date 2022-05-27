@@ -17,6 +17,7 @@ h2 {
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
+  padding: 24px;
 }
 
 .main-page-header {
@@ -70,7 +71,6 @@ h2 {
 .about-text-links {
   display: flex;
   flex-direction: column;
-  padding: 20px;
 }
 
 .about-text {
@@ -146,4 +146,9 @@ button,
   display: flex;
   background: none;
   border: none;
+}
+
+.recent-works {
+  display: grid;
+  padding: 20px;
 }
