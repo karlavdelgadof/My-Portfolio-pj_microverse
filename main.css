@@ -1,21 +1,24 @@
 body {
   background: #191765;
-  font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+  font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   box-sizing: border-box;
   margin: 0;
 }
 
-h1, h2 {
-  margin:0;
+h1, 
+h2 {
+  margin: 0;
 }
+
 .main-page-background {
-background: url("./multimedia/Top-circles.png") no-repeat;
+  background: url("./multimedia/Top-circles.png") no-repeat;
   height: 100%;
   width: auto;
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
 }
+
 .main-page-header {
   display: flex;
   justify-content: space-between;
@@ -24,19 +27,19 @@ background: url("./multimedia/Top-circles.png") no-repeat;
   margin-bottom: 50px;
 }
  
- .logo {
-   font-size: 18px;
-   font-weight: 500;
-   padding: 10px 20px;
-   margin: 0;
- }
+.logo {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 20px;
+  margin: 0;
+}
+
 .open-menu {
   display: flex;
   background: none;
   border: none;
   padding: 10px 30px;
 }
-
 
 .headline {
   display: flex;
@@ -68,7 +71,6 @@ background: url("./multimedia/Top-circles.png") no-repeat;
   display: flex;
   flex-direction: column;
   padding: 20px;
-
 }
 
 .about-text {
@@ -89,7 +91,7 @@ background: url("./multimedia/Top-circles.png") no-repeat;
 .language-frameworks-container {
   display: flex;
   flex-direction: row;
-  gap: 24px
+  gap: 24px;
 }
 
 .about-l-section {
@@ -99,6 +101,7 @@ background: url("./multimedia/Top-circles.png") no-repeat;
   flex-direction: column;
   flex: content;
 }
+
 .about-l-header {
   font-size: 12px;
   font-weight: 500;
@@ -124,6 +127,7 @@ a {
   gap: 8px;
   padding: 0;
 }
+
 .work-element {
   display: flex;
   justify-content: center;
@@ -133,11 +137,12 @@ a {
 }
 
 .work-text {
-    display: flex;
-    gap: 12px;
+  display: flex;
+  gap: 12px;
 }
 
-button, .social-icon {
+button, 
+.social-icon {
   display: flex;
   background: none;
   border: none;
