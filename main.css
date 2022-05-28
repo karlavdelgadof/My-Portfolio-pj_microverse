@@ -5,18 +5,31 @@ body {
   margin: 0;
 }
 
+.main-background {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  z-index: -1;
+}
+
+.main-background-2 {
+  position: absolute;
+  top: 180%;
+  width: 100%;
+  z-index: -1;
+}
+
 h1,
 h2 {
   margin: 0;
 }
 
-.main-page-background {
-  background: url("./multimedia/Top-circles.png") no-repeat;
-  height: 100%;
-  width: auto;
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
+hr {
+  width: 100%;
+  border: 1px solid #646369;
+  background-color: #646369;
+  margin-bottom: 50px;
+  margin-top: 0;
 }
 
 .main-page-header {
@@ -24,7 +37,7 @@ h2 {
   justify-content: space-between;
   align-items: center;
   color: #ffff;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .logo {
@@ -44,6 +57,7 @@ h2 {
 .headline {
   display: flex;
   flex-direction: column;
+  padding: 24px;
 }
 
 .headline-text {
@@ -65,12 +79,12 @@ h2 {
   font-weight: 500;
   margin: 0;
   padding: 20px 18px;
+  margin-bottom: 20px;
 }
 
 .about-text-links {
   display: flex;
   flex-direction: column;
-  padding: 20px;
 }
 
 .about-text {
@@ -80,12 +94,13 @@ h2 {
   width: 327px;
   height: auto;
   align-self: center;
+  padding-bottom: 10px;
 }
 
 .about-links {
   display: flex;
   flex-direction: column;
-  padding: 20px 15px;
+  padding: 0 25px 18px;
 }
 
 .language-frameworks-container {
@@ -126,6 +141,7 @@ a {
   justify-content: center;
   gap: 8px;
   padding: 0;
+  margin-top: 15px;
 }
 
 .work-element {
@@ -134,6 +150,7 @@ a {
   font-size: 20px;
   color: #a2a3ae;
   font-weight: 500;
+  margin-top: 30px;
 }
 
 .work-text {
@@ -146,4 +163,106 @@ button,
   display: flex;
   background: none;
   border: none;
+}
+
+.recent-works {
+  display: grid;
+  padding: 24px;
+  text-align: left;
+  justify-content: center;
+}
+
+.recent-works-header {
+  color: #9490ff;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 52px;
+  letter-spacing: 0;
+  text-align: left;
+  max-width: 270px;
+  margin-bottom: 45px;
+  margin-top: 65px;
+}
+
+.work-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-placeholder {
+  height: 236px;
+  width: auto;
+  background: #f9f9f9;
+}
+
+.work-header {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #ffff;
+  margin-bottom: 20px;
+  margin-top: 55px;
+}
+
+.work-p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0;
+  color: #dcdce8;
+  margin-top: 40px;
+  margin-bottom: 42px;
+}
+
+.tags-section {
+  display: flex;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-align: left;
+  align-items: center;
+  margin: 0 20px 0 6px;
+  gap: 14px;
+}
+
+.tag {
+  flex: content;
+  padding-left: 8px;
+  border-right: 1px solid #5555;
+}
+
+.ruby-tag {
+  border-right: none;
+}
+
+.work-card-button:enabled {
+  display: flex;
+  font-family: inherit;
+  color: #edecff;
+  background-color: #7d73fc;
+  width: 90px;
+  height: 48px;
+  padding: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  align-items: center;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.work-card-button:hover {
+  background: #7d73fc;
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+}
+
+.work-card-button:focus {
+  background: #5e42d7;
+}
+
+.work-card-button:disabled {
+  background: #2a2b33;
 }
