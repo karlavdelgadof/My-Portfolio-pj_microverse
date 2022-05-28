@@ -165,6 +165,7 @@ button,
   letter-spacing: 0em;
   text-align: left;
   max-width: 270px;
+  margin-bottom: 40px;
 }
 
 .work-card {
@@ -186,6 +187,7 @@ button,
   text-align: left;
   color: #ffffff;
   margin-bottom: 20px;
+  margin-top: 55px;
 }
 
 .work-p {
