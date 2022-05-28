@@ -225,7 +225,7 @@ button,
   text-align: left;
   align-items: center;
   margin: 0 20px 0 6px;
-  gap: 14px;  
+  gap: 14px; 
 }
 
 .tag {
@@ -256,7 +256,7 @@ button,
 
 .work-card-button:hover {
   background: #7d73fc;
-  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);  
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
 }
 
 .work-card-button:focus {
@@ -265,5 +265,4 @@ button,
 
 .work-card-button:disabled {
   background: #2a2b33;
-  ;
 }
