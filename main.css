@@ -7,14 +7,16 @@ body {
 
 .main-background {
   position: absolute;
-  top: 60px;
+  top: 50px;
   width: 100%;
+  z-index: -1;
 }
 
 .main-background-2 {
   position: absolute;
   top: 180%;
   width: 100%;
+  z-index: -1;
 }
 
 h1,
@@ -29,15 +31,6 @@ hr {
   margin-bottom: 50px;
   margin-top: 0;
 }
-
-/* .main-page-background {
-  background: url("./multimedia/Top-circles.png") no-repeat;
-  height: 100%;
-  width: auto;
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
-} */
 
 .main-page-header {
   display: flex;
@@ -238,6 +231,11 @@ button,
 .tag {
   flex: content;
   padding-left: 8px;
+  border-right: 1px solid #555555;
+}
+
+.ruby-tag {
+  border-right: none;
 }
 
 .work-card-button:enabled {
