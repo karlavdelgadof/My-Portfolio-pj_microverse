@@ -177,7 +177,7 @@ button,
   font-size: 40px;
   font-weight: 500;
   line-height: 52px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
   max-width: 270px;
   margin-bottom: 45px;
@@ -199,7 +199,7 @@ button,
   font-size: 32px;
   font-weight: 500;
   line-height: 44px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
   color: #ffffff;
   margin-bottom: 20px;
@@ -221,7 +221,7 @@ button,
   font-size: 15px;
   font-weight: 500;
   line-height: 20px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
   align-items: center;
   margin: 0 20px 0 6px;
@@ -256,7 +256,7 @@ button,
 
 .work-card-button:hover {
   background: #7d73fc;
-  box-shadow: 0px 8px 16px rgba(125, 115, 252, 0.48);  
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);  
 }
 
 .work-card-button:focus {
