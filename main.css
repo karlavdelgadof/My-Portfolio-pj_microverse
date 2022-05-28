@@ -10,6 +10,12 @@ h2 {
   margin: 0;
 }
 
+hr {
+  width: 100%;
+  border: 1px solid #646369;
+  margin: 40px auto;
+}
+
 .main-page-background {
   background: url("./multimedia/Top-circles.png") no-repeat;
   height: 100%;
