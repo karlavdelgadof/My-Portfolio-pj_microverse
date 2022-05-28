@@ -256,7 +256,7 @@ button,
 
 .work-card-button:hover {
   background: #7d73fc;
-  box-shadow: 0px 8px 16px rgba(125, 115, 252, 0.48) 48%;  
+  box-shadow: 0px 8px 16px rgba(125, 115, 252, 0.48);  
 }
 
 .work-card-button:focus {
