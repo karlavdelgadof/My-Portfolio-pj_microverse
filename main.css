@@ -5,6 +5,18 @@ body {
   margin: 0;
 }
 
+.main-background {
+  position: absolute;
+  top: 60px;
+  width: 100%;
+}
+
+.main-background-2 {
+  position: absolute;
+  top: 180%;
+  width: 100%;
+}
+
 h1,
 h2 {
   margin: 0;
@@ -13,18 +25,19 @@ h2 {
 hr {
   width: 100%;
   border: 1px solid #646369;
+  background-color: #646369;
   margin-bottom: 50px;
   margin-top: 0;
 }
 
-.main-page-background {
+/* .main-page-background {
   background: url("./multimedia/Top-circles.png") no-repeat;
   height: 100%;
   width: auto;
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-}
+} */
 
 .main-page-header {
   display: flex;
@@ -224,12 +237,7 @@ button,
 
 .tag {
   flex: content;
-  border-right: 1px solid #555555;
   padding-left: 8px;
-}
-
-.ruby-tag {
-  border-right: none;
 }
 
 .work-card-button:enabled {
