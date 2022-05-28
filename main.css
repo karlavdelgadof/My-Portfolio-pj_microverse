@@ -152,5 +152,100 @@ button,
 
 .recent-works {
   display: grid;
-  padding: 20px;
+  padding: 24px;
+  text-align: left;
+  justify-content: center;
+}
+
+.recent-works-header {
+  color: #9490ff;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 52px;
+  letter-spacing: 0em;
+  text-align: left;
+  max-width: 270px;
+}
+
+.work-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-placeholder {
+  height: 236px;
+  width: auto;
+  background: #f9f9f9;
+}
+
+.work-header {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.work-p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  color: #DCDCE8;
+  margin-top: 38px;
+  margin-bottom: 45px;
+}
+
+.tags-section {
+  display: flex;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  align-items: center;
+  margin: 0 20px 0 6px;
+  gap: 14px;  
+}
+
+.tag {
+  flex: content;
+  border-right: 1px solid #555555;
+  padding-left: 8px;
+}
+
+.ruby-tag {
+  border-right: none;
+}
+
+.work-card-button:enabled {
+  display: flex;
+  font-family: inherit;
+  color: #edecff;
+  background-color: #7d73fc;
+  width: 90px;
+  height: 48px;
+  padding: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  align-items: center;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.work-card-button:hover {
+  background: #7d73fc;
+  box-shadow: 0px 8px 16px rgba(125, 115, 252, 0.48) 48%;  
+}
+
+.work-card-button:focus {
+  background: #5e42d7;
+}
+
+.work-card-button:disabled {
+  background: #2a2b33;
+  ;
 }
