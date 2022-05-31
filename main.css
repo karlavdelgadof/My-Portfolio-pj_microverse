@@ -167,7 +167,8 @@ button,
 
 .recent-works {
   display: grid;
-  padding: 24px;
+  padding: 24px 24px 0;
+  gap: 45px;
   text-align: left;
   justify-content: center;
 }
@@ -251,7 +252,6 @@ button,
   text-align: center;
   align-items: center;
   margin-top: 45px;
-  margin-bottom: 45px;
 }
 
 .work-card-button:hover {
@@ -321,7 +321,7 @@ li {
   width: 100%;
 }
 .small-text, .msg {
-  width: 100%;
+  width: 95%;
   height: 48px;
   border-radius: 5px;
   font-family: Roboto;
