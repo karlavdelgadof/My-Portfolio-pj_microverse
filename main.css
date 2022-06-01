@@ -167,7 +167,8 @@ button,
 
 .recent-works {
   display: grid;
-  padding: 24px;
+  padding: 24px 24px 0;
+  gap: 45px;
   text-align: left;
   justify-content: center;
 }
@@ -251,7 +252,6 @@ button,
   text-align: center;
   align-items: center;
   margin-top: 45px;
-  margin-bottom: 45px;
 }
 
 .work-card-button:hover {
@@ -265,4 +265,117 @@ button,
 
 .work-card-button:disabled {
   background: #2a2b33;
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 24px 25px;
+  border-bottom: 1px solid #646369;
+  gap: 40px;
+}
+
+.contact-us-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  gap: 24px;
+}
+
+.contact-header {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-align: center;
+  color: #9390ff;
+}
+
+.contact-p {
+  color: #f5f5ff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: center;
+  margin: 0;
+}
+
+.contact-form {
+  width: 100%;
+}
+
+.contact-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  gap: 24px;
+  justify-content: center;
+}
+
+.contact-inputs,
+li {
+  width: 100%;
+}
+
+.small-text,
+.msg {
+  width: 95%;
+  height: 48px;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #191765;
+  padding-left: 15px;
+}
+
+.msg {
+  height: 148px;
+  padding-top: 15px;
+}
+
+.submit-container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-submit:enabled {
+  display: flex;
+  font-family: inherit;
+  color: #edecff;
+  background-color: #7d73fc;
+  border-radius: 4px;
+  width: 100px;
+  height: 48px;
+  padding: 12px 40px 12px 35px;
+  font-size: 12px;
+  font-weight: 600;
+  align-items: center;
+  justify-self: center;
+}
+
+.contact-submit:hover {
+  background: #7d73fc;
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+}
+
+.contact-submit:focus {
+  background: #5e42d7;
+}
+
+.contact-submit:disabled {
+  background: #2a2b33;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  align-items: center;
+  color: #ebebff;
+  font-size: 20px;
+  font-weight: 500;
 }
