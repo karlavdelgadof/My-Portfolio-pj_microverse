@@ -326,7 +326,7 @@ li {
   width: 95%;
   height: 48px;
   border-radius: 5px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-size: 15px;
   color: #191765;
   padding-left: 15px;
