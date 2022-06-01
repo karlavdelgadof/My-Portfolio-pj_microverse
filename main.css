@@ -326,7 +326,7 @@ li {
   width: 95%;
   height: 48px;
   border-radius: 5px;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-size: 15px;
   color: #191765;
   padding-left: 15px;
@@ -337,7 +337,7 @@ li {
   padding-top: 15px;
 }
 
-.submit-container{
+.submit-container {
   display: flex;
   justify-content: center;
 }
@@ -379,3 +379,4 @@ li {
   font-size: 20px;
   font-weight: 500;
 }
+
