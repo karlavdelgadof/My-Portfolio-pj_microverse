@@ -5,20 +5,6 @@ body {
   margin: 0;
 }
 
-.main-background {
-  position: absolute;
-  top: 50px;
-  width: 100%;
-  z-index: -1;
-}
-
-.main-background-2 {
-  position: absolute;
-  top: 180%;
-  width: 100%;
-  z-index: -1;
-}
-
 h1,
 h2 {
   margin: 0;
@@ -312,11 +298,6 @@ button,
   padding: 0;
   gap: 24px;
   justify-content: center;
-}
-
-.contact-inputs,
-li {
-  width: 100%;
 }
 
 .small-text,
