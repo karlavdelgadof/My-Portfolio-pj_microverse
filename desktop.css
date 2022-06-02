@@ -1,0 +1,83 @@
+hr {
+  margin-bottom: 40px;
+}
+
+.main-page-header {
+  padding: 0 142px;
+  margin-bottom: 0;
+}
+
+.work-element-hidden {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffff;
+  padding: 0 142px;
+  margin-bottom: 0;
+  padding: 0 40px;
+}
+
+.logo {
+  padding: 10px 0;
+}
+
+.open-menu {
+  padding: 10px 0;
+}
+
+.headline {
+  padding: 130px 142px 114px;
+}
+
+.name {
+  font-size: 5.62rem;
+  text-align: center;
+  line-height: 105px
+}
+
+.occupation {
+  font-size: 2rem;
+  margin-bottom: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 47px;
+}
+
+.about-text {
+  margin: 0;
+  padding: 0 10px 45px;
+  text-align: justify; 
+  text-align-last: center; 
+  line-height: 32px;
+  left: 0.5px;
+  width: 100%;
+}
+
+.about-text-links {
+  padding: 0 354px;
+}
+
+.about-links {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 80px;
+  justify-content: flex-start;
+  padding-top: 50px;
+}
+
+.work-element {
+  display: none;
+}
+
+.social-media {
+  display: none;
+}
+
+.social-media-hidden {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 8px;
+  padding: 0;
+  margin-top: 0;
+}
