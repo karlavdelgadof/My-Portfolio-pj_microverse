@@ -81,3 +81,85 @@ hr {
   padding: 0;
   margin-top: 0;
 }
+
+.recent-works {
+  display: grid;
+  padding: 24px 142px 114px;
+  gap: 88px;
+  text-align: left;
+  justify-content: center;
+}
+
+.recent-works-header {
+  max-width: 100%;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 114px;
+  margin-bottom: 0;
+  padding-bottom: 38px;
+  border-bottom: 1px solid #646369;
+  margin-top: 65px;
+}
+
+.work-card {
+  display: grid;
+  grid-template-columns: 60% 35%;
+  gap: 20px;
+}
+
+.left-block {
+  display: grid;
+  grid-template-columns: 35% 60%;
+  gap: 20px;
+}
+
+.left-side {
+  order: 1;
+  width: 100%;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: auto;
+}
+
+.work-content {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  align-items: flex-start;
+}
+
+.work-header {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.work-p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.tags-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 0;
+  margin: 0;
+}
+
+.tag {
+  flex: content;
+  padding: 0 18px;
+  border-right: 1px solid #646369;
+}
+
+.ruby-tag {
+  border-right: none;
+}
+
+.work-card-button:enabled {
+  margin-top: 0;
+}
