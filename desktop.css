@@ -7,6 +7,28 @@ hr {
   margin-bottom: 0;
 }
 
+.header-hidden {
+  display: none;
+}
+
+.nav-bar {
+  display: flex;
+  gap: 20px;  
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  font-size: 0.93rem;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  padding-bottom: 4px;
+  align-content: center;
+}
+
 .work-element-hidden {
   display: flex;
   justify-content: space-between;
