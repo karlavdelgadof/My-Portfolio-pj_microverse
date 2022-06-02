@@ -241,6 +241,7 @@ button,
   font-family: inherit;
   color: #edecff;
   background-color: #7d73fc;
+  border-radius: 4px;
   width: 90px;
   height: 48px;
   padding: 12px;
