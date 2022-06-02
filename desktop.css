@@ -163,3 +163,52 @@ hr {
 .work-card-button:enabled {
   margin-top: 0;
 }
+
+.contact-us {
+  padding: 120px 378px 120px;
+  gap: 88px;
+}
+
+.contact-us-text {
+  width: 100%;
+  gap: 24px;
+ 
+}
+
+.contact-header {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.contact-p {
+  font-size: 1.25rem;
+  line-height: 28px; 
+  padding: 0 40px;
+}
+
+.contact-inputs {
+  gap: 20px;
+  margin-top: 0;
+  align-items: stretch;
+  padding: 0 20px 0 40px;
+  margin-bottom: 0;
+}
+
+.small-text,
+.msg {
+  font-size: 1.06rem;
+}
+
+.contact-submit:enabled {
+  margin: 68px 25px 0 0;
+  padding: 12px 40px 12px 63px;
+  width: 160px;
+  font-size: 0.93rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
