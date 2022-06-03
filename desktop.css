@@ -1,14 +1,25 @@
-hr {
-  margin-bottom: 40px;
+body {
+  background-image: url("/multimedia/circle-1-header.svg"), url("/multimedia/circle-2-header.svg"),
+   url("/multimedia/circle-4.svg"), url("/multimedia/circle-5.svg"), url("/multimedia/circle-6.svg"), 
+   url("/multimedia/circle-7.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: 300px 300px, 325px 325px, 330px 1000px, 280px 1200px, 600px 280px,
+   430px 1000px;
+  background-position: top 198px left 69px, left 1180px top 520px, left -10px top 1150px,
+   right 0 top 1600px, left -100px top 2500px, right -10px top 2450px;
 }
 
 .main-page-header {
-  padding: 0 142px;
-  margin-bottom: 0;
+  display: none; 
 }
 
 .header-hidden {
-  display: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffff;
+  padding: 0 142px;
+  margin-bottom: 0;
 }
 
 .nav-bar {
@@ -49,6 +60,7 @@ hr {
 
 .headline {
   padding: 130px 142px 114px;
+  gap: 88px;
 }
 
 .name {
@@ -82,9 +94,18 @@ hr {
 .about-links {
   display: flex;
   flex-flow: row wrap;
-  gap: 80px;
   justify-content: flex-start;
   padding-top: 50px;
+  gap: 23px;
+}
+
+.about-l-section {
+  width: 30%;
+}
+
+.about-l-header {
+  font-size: 1.12rem;
+  font-weight: 700;
 }
 
 .work-element {
@@ -117,7 +138,6 @@ hr {
   font-weight: 700;
   font-size: 4rem;
   line-height: 114px;
-  margin-bottom: 0;
   padding-bottom: 38px;
   border-bottom: 1px solid #646369;
   margin-top: 65px;
@@ -219,6 +239,13 @@ hr {
 .small-text,
 .msg {
   font-size: 1.06rem;
+  outline: 1px solid #5e42d7;
+}
+
+.small-text:hover,
+.msg:hover {
+  border: 2px solid #7d73fc;
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
 }
 
 .contact-submit:enabled {
