@@ -1,16 +1,36 @@
 body {
-  background-image: url("/multimedia/circle-1-header.svg"), url("/multimedia/circle-2-header.svg"),
-   url("/multimedia/circle-4.svg"), url("/multimedia/circle-5.svg"), url("/multimedia/circle-6.svg"), 
-   url("/multimedia/circle-7.svg");
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-  background-size: 300px 300px, 325px 325px, 330px 1000px, 280px 1200px, 600px 280px,
-   430px 1000px;
-  background-position: top 198px left 69px, left 1180px top 520px, left -10px top 1150px,
-   right 0 top 1600px, left -100px top 2500px, right -10px top 2450px;
+  background-image:
+    url("/multimedia/circle-1-header.svg"),
+    url("/multimedia/circle-2-header.svg"),
+    url("/multimedia/circle-4.svg"),
+    url("/multimedia/circle-5.svg"),
+    url("/multimedia/circle-6.svg"),
+    url("/multimedia/circle-7.svg");
+  background-repeat:
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat;
+  background-size:
+    300px 300px,
+    325px 325px,
+    330px 1000px,
+    280px 1200px,
+    600px 280px,
+    430px 1000px;
+  background-position:
+    top 198px left 69px,
+    left 1180px top 520px,
+    left -10px top 1150px,
+    right 0 top 1600px,
+    left -100px top 2500px,
+    right -10px top 2450px;
 }
 
 .main-page-header {
-  display: none; 
+  display: none;
 }
 
 .header-hidden {
@@ -24,7 +44,7 @@ body {
 
 .nav-bar {
   display: flex;
-  gap: 20px;  
+  gap: 20px;
 }
 
 .nav-links {
@@ -45,7 +65,6 @@ body {
   justify-content: space-between;
   align-items: center;
   color: #ffff;
-  padding: 0 142px;
   margin-bottom: 0;
   padding: 0 40px;
 }
@@ -66,7 +85,7 @@ body {
 .name {
   font-size: 5.62rem;
   text-align: center;
-  line-height: 105px
+  line-height: 105px;
 }
 
 .occupation {
@@ -80,8 +99,8 @@ body {
 .about-text {
   margin: 0;
   padding: 0 10px 45px;
-  text-align: justify; 
-  text-align-last: center; 
+  text-align: justify;
+  text-align-last: center;
   line-height: 32px;
   left: 0.5px;
   width: 100%;
@@ -193,7 +212,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 0;
   margin: 0;
 }
@@ -220,7 +239,6 @@ body {
 .contact-us-text {
   width: 100%;
   gap: 24px;
- 
 }
 
 .contact-header-hidden {
@@ -239,7 +257,7 @@ body {
 
 .contact-p {
   font-size: 1.25rem;
-  line-height: 28px; 
+  line-height: 28px;
   padding: 0 40px;
 }
 

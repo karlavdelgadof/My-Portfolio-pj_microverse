@@ -3,14 +3,34 @@ body {
   font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   box-sizing: border-box;
   margin: 0;
-  background-image: url("/multimedia/circle-1-header.svg"), url("/multimedia/circle-2-header.svg"),
-   url("/multimedia/circle-4.svg"), url("/multimedia/circle-5.svg"), url("/multimedia/circle-6-blur.svg"), 
-   url("/multimedia/circle-7-blur.svg");
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-  background-size: 226px 226px, 184px 184px, 380px 940px, 220px 1100px, 600px 280px,
-   220px 1000px;
-  background-position: top 40px left -140px, right -120px top 512px, left -140px top 1170px,
-   right -70px top 1820px, left -200px top 3080px, right -10px top 3490px;
+  background-image:
+    url("/multimedia/circle-1-header.svg"),
+    url("/multimedia/circle-2-header.svg"),
+    url("/multimedia/circle-4.svg"),
+    url("/multimedia/circle-5.svg"),
+    url("/multimedia/circle-6-blur.svg"),
+    url("/multimedia/circle-7-blur.svg");
+  background-repeat:
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat;
+  background-size:
+    226px 226px,
+    184px 184px,
+    380px 940px,
+    220px 1100px,
+    600px 280px,
+    220px 1000px;
+  background-position:
+    top 40px left -140px,
+    right -120px top 512px,
+    left -140px top 1170px,
+    right -70px top 1820px,
+    left -200px top 3080px,
+    right -10px top 3490px;
 }
 
 h1,
@@ -36,7 +56,6 @@ hr {
 .header-hidden {
   display: none;
 }
-
 
 .logo {
   font-size: 18px;
@@ -174,6 +193,7 @@ button,
   text-align: left;
   justify-content: center;
 }
+
 .recent-works-header-hidden {
   color: #9490ff;
   font-size: 40px;
@@ -187,6 +207,7 @@ button,
   padding-bottom: 40px;
   border-bottom: 1px solid #646369;
 }
+
 .recent-works-header {
   display: none;
 }
@@ -342,15 +363,15 @@ button,
   padding-left: 15px;
 }
 
+.msg {
+  height: 148px;
+  padding-top: 15px;
+}
+
 .small-text:hover,
 .msg:hover {
   border: 2px solid #7d73fc;
   box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
-}
-
-.msg {
-  height: 148px;
-  padding-top: 15px;
 }
 
 .submit-container {
