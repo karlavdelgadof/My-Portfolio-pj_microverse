@@ -174,8 +174,7 @@ button,
   text-align: left;
   justify-content: center;
 }
-
-.recent-works-header {
+.recent-works-header-hidden {
   color: #9490ff;
   font-size: 40px;
   font-weight: 700;
@@ -187,6 +186,9 @@ button,
   margin-top: 0;
   padding-bottom: 40px;
   border-bottom: 1px solid #646369;
+}
+.recent-works-header {
+  display: none;
 }
 
 .work-card {
@@ -291,6 +293,10 @@ button,
   align-items: center;
   padding: 0;
   gap: 24px;
+}
+
+.contact-header-hidden {
+  display: none;
 }
 
 .contact-header {
