@@ -270,12 +270,11 @@ button,
   border-right: none;
 }
 
-.work-card-button:enabled {
+.work-card-button {
   display: flex;
   font-family: inherit;
   color: #edecff;
   background-color: #7d73fc;
-  border-radius: 4px;
   width: 90px;
   height: 48px;
   padding: 12px;
@@ -284,6 +283,10 @@ button,
   text-align: center;
   align-items: center;
   margin-top: 0;
+}
+
+.work-card-button:active {
+  background-color: #7d73fc;
 }
 
 .work-card-button:hover {
@@ -379,12 +382,11 @@ button,
   justify-content: center;
 }
 
-.contact-submit:enabled {
+.contact-submit {
   display: flex;
   font-family: inherit;
   color: #edecff;
   background-color: #7d73fc;
-  border-radius: 4px;
   width: 100px;
   height: 48px;
   padding: 12px 40px 12px 35px;
@@ -392,6 +394,10 @@ button,
   font-weight: 600;
   align-items: center;
   justify-self: center;
+}
+
+.contact-submit:active {
+  background-color: #7d73fc;
 }
 
 .contact-submit:hover {
@@ -647,10 +653,6 @@ button,
     border-right: none;
   }
 
-  .work-card-button:enabled {
-    margin-top: 0;
-  }
-
   .contact-us {
     padding: 120px 378px 120px;
     gap: 88px;
@@ -701,7 +703,7 @@ button,
     box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
   }
 
-  .contact-submit:enabled {
+  .contact-submit:active {
     margin: 68px 25px 0 0;
     padding: 12px 40px 12px 63px;
     width: 160px;
