@@ -539,9 +539,8 @@ button,
   .about-links {
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     padding-top: 50px;
-    gap: 23px;
   }
 
   .about-l-section {
