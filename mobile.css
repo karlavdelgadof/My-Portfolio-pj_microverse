@@ -428,6 +428,8 @@ button,
   font-weight: 600;
   align-items: center;
   justify-self: center;
+  box-shadow: 5px 5px 0px #5e42d7;
+  transition: 2s;
 }
 
 .contact-submit:active {
@@ -435,8 +437,9 @@ button,
 }
 
 .contact-submit:hover {
-  background: #7d73fc;
-  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+  box-shadow: 0px 0px 0px #7d73fc;
+  cursor: pointer;
+  transform: translateX(5px) translateY(5px);
 }
 
 .contact-submit:focus {
