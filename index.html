@@ -5,160 +5,191 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>My Website Portfolio</title>
-      <link rel="stylesheet" href="main.css">
+      <link rel="stylesheet" href="mobile.css">
       <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     </head>
     <body>
       <!-- This div holds the entire content of the main page to add a common background for it in the styling file -->
-        <img class="main-background" src="/multimedia/Top-circles.png" alt="Circles illustration group">
-        <img class="main-background-2" src="/multimedia/bottom-circles.png" alt="Circles illustration group">
-        <header class="main-page-header">
+      <header class="main-page-header ">
+        <h1 class="logo"><a href="#">Karla Delgado</a></h1>
+        <button type="button" class="open-menu"><img src="multimedia/Icon-Menu.svg" alt="Hamburger menu icon"></button>
+      </header>
+      <header class="header-hidden">
           <h1 class="logo"><a href="#">Karla Delgado</a></h1>
-          <button type="button" class="open-menu"><img src="multimedia/Icon-Menu.svg" alt="Hamburger menu icon"></button>
-        </header>
-      
-        <section class="headline">
-          <!--All the divs added down below contain other elements inside for flex-related styling purposes-->
-          <div class="headline-text">
-            <h1 class="name">Karla Delgado</h1>
-            <h2 class="occupation">Software Developer</h2>
-          </div>
-          <div class="about-text-links">
-            <p class="about-text">
-              I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hestiate to contact me.
-            </p>
-            <hr>
-            <section class="about-links">
-              <div class="language-frameworks-container">
-                <div class="about-l-section">
-                  <h2 class="about-l-header">Language</h2>
-                  <ul>
-                    <li><a href="#">Javascript</a></li>
-                    <li><a href="#">Ruby</a></li>
-                    <li><a href="#">Html</a></li>
-                    <li><a href="#">Css</a></li>
-                  </ul>
-                </div>
-                <div class="about-l-section">
-                  <h2 class="about-l-header">Frameworks</h2>
-                  <ul>
-                    <li><a href="#">Bootstrap</a></li>
-                    <li><a href="#">Ruby on Rails</a></li>
-                    <li><a href="#">RSPec</a></li>
-                    <li><a href="#">CapyBara</a></li>
-                    <li><a href="#">Selenium</a></li>
-                  </ul>
-                </div>            
-              </div>
-              <div class="about-l-section">
-                <h2 class="about-l-header">Skills</h2>
-                  <ul>
-                    <li><a href="#">Codekit</a></li>
-                    <li><a href="#">Github</a></li>
-                    <li><a href="#">Codepen</a></li>
-                    <li><a href="#">Gitlab</a></li>
-                    <li><a href="#">Terminal</a></li>
-                  </ul>
-              </div>
-            </section>
-          </div>
-          <hr>
-          <div class="social-media">
-              <button type="button" class="social-icon"><img src="multimedia/githubicon.png" alt="Github cat icon"></button>
-              <button type="button" class="social-icon"><img src="multimedia/linkedinicon.png" alt="Linkedin icon"></button>
-              <button type="button" class="social-icon"><img src="multimedia/angelist1.png" alt="Peace hand sign icon"></button>
-              <button type="button" class="social-icon"><img src="multimedia/twittericon.png" alt="Twitter birdie icon"></button>
-              <button type="button" class="social-icon"><img src="multimedia/Icon-Medium.png" alt="Medium icon"></button>             
+          <nav class="nav-bar">
+            <ul class="nav-links">
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <button type="button" class="message"><img src="multimedia/message-icon.svg" alt="Letter icon"></button>
+          </nav>
+      </header>
+      <section class="headline">
+        <!--All the divs added down below contain other elements inside for flex-related styling purposes-->
+        <div class="headline-text">
+          <h1 class="name">Karla Delgado</h1>
+          <h2 class="occupation">Software Developer</h2>
+        </div>
+            
+        <div class="about-text-links">  
+          <p class="about-text">
+            I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hestiate to contact me.
+          </p>
+          <section class="about-links">
+            <div class="about-l-section">
+              <h2 class="about-l-header">Language</h2>
+              <ul>
+                <li><a href="#">Javascript</a></li>
+                <li><a href="#">Ruby</a></li>
+                <li><a href="#">Html</a></li>
+                <li><a href="#">Css</a></li>
+              </ul>
             </div>
-          <div class="work-element">
-              <p class="work-text"><img src="multimedia/down-arrow.png" alt="Gray down arrow">Work</p>
-          </div>        
-        </section>
-        <section class="recent-works">
-          <h2 class="recent-works-header">MY RECENT WORK</h2>
-          <hr> 
-          <article class="work-card">
-            <div class="image-placeholder"></div>
-            <h3 class="work-header">Multi-Post Stories</h3>
-            <p class="work-p">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-            <ul class="tags-section">
-              <li class="tag"><a href="#">css</a></li>
-              <li class="tag"><a href="#">html</a></li>
-              <li class="tag"><a href="#">bootstrap</a></li>
-              <li class="tag ruby-tag"><a href="#">Ruby</a></li>
-            </ul>
-            <button type="button" class="work-card-button">See Project</button>
-          </article>
-          <article class="work-card">
-            <div class="image-placeholder"></div>
-            <h3 class="work-header">Multi-Post Stories</h3>
-            <p class="work-p">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-            <ul class="tags-section">
-              <li class="tag"><a href="#">css</a></li>
-              <li class="tag"><a href="#">html</a></li>
-              <li class="tag"><a href="#">bootstrap</a></li>
-              <li class="tag ruby-tag"><a href="#">Ruby</a></li>
-            </ul>
-            <button type="button" class="work-card-button">See Project</button>
-          </article>
-          <article class="work-card">
-            <div class="image-placeholder"></div>
-            <h3 class="work-header">Multi-Post Stories</h3>
-            <p class="work-p">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-            <ul class="tags-section">
-              <li class="tag"><a href="#">css</a></li>
-              <li class="tag"><a href="#">html</a></li>
-              <li class="tag"><a href="#">bootstrap</a></li>
-              <li class="tag ruby-tag"><a href="#">Ruby</a></li>
-            </ul>
-            <button type="button" class="work-card-button">See Project</button>
-          </article>
-          <article class="work-card">
-            <div class="image-placeholder"></div>
-            <h3 class="work-header">Multi-Post Stories</h3>
-            <p class="work-p">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-            <ul class="tags-section">
-              <li class="tag"><a href="#">css</a></li>
-              <li class="tag"><a href="#">html</a></li>
-              <li class="tag"><a href="#">bootstrap</a></li>
-              <li class="tag ruby-tag"><a href="#">Ruby</a></li>
-            </ul>
-            <button type="button" class="work-card-button">See Project</button>
-          </article>        
-        </section>
-        <section class="contact-us">
-          <div class="contact-us-text">
-            <h2 class="contact-header">CONTACT US</h2>
-            <p class="contact-p">If you have an application you are interested in developing, a feature that you need built or a project that
-              needs coding. I'd love to help with it!</p>
-          </div>
-          <form action="https://formspree.io/f/mayvvvrn" method="post" class="contact-form">
-            <ul class="contact-inputs">
-              <li>
-                <input class="small-text" type="text" name="user_name" placeholder="First and Last Name" maxlength="30" required>
-              </li>
-              <li>
-                <input class="small-text" type="email" name="user_email" value="example1@gmail.com" required>
-              </li>
-              <li>
-                <textarea class="msg" name="user_message" maxlength="500" placeholder="Enter the message here" required></textarea>
-              </li>
-              <li class="submit-container">
-                <button class="contact-submit" type="submit">Send</button>
-              </li>
-            </ul>
-          </form>
-        </section>
-        <footer class="footer">
-          <div class="social-media">
+            <div class="about-l-section">
+              <h2 class="about-l-header">Frameworks</h2>
+              <ul>
+                <li><a href="#">Bootstrap</a></li>
+                <li><a href="#">Ruby on Rails</a></li>
+                <li><a href="#">RSPec</a></li>
+                <li><a href="#">CapyBara</a></li>
+                <li><a href="#">Selenium</a></li>
+              </ul>
+            </div>            
+            <div class="about-l-section">
+              <h2 class="about-l-header">Skills</h2>
+              <ul>
+                <li><a href="#">Codekit</a></li>
+                <li><a href="#">Github</a></li>
+                <li><a href="#">Codepen</a></li>
+                <li><a href="#">Gitlab</a></li>
+                <li><a href="#">Terminal</a></li>
+              </ul>
+            </div>
+          </section>
+        </div>
+        <div class="social-media">
+          <button type="button" class="social-icon"><img src="multimedia/githubicon.png" alt="Github cat icon"></button>
+          <button type="button" class="social-icon"><img src="multimedia/linkedinicon.png" alt="Linkedin icon"></button>
+          <button type="button" class="social-icon"><img src="multimedia/angelist1.png" alt="Peace hand sign icon"></button>
+          <button type="button" class="social-icon"><img src="multimedia/twittericon.png" alt="Twitter birdie icon"></button>
+          <button type="button" class="social-icon"><img src="multimedia/Icon-Medium.png" alt="Medium icon"></button>             
+        </div>
+        <div class="work-element-hidden">
+          <p class="work-text"><img src="multimedia/down-arrow.png" alt="Gray down arrow">Work</p>
+          <div class="social-media-hidden">
             <button type="button" class="social-icon"><img src="multimedia/githubicon.png" alt="Github cat icon"></button>
             <button type="button" class="social-icon"><img src="multimedia/linkedinicon.png" alt="Linkedin icon"></button>
             <button type="button" class="social-icon"><img src="multimedia/angelist1.png" alt="Peace hand sign icon"></button>
-            <button type="button" class="social-icon"><img src="multimedia/twittericon.png"
-                alt="Twitter birdie icon"></button>
-            <button type="button" class="social-icon"><img src="multimedia/Icon-Medium.png" alt="Medium icon"></button>
+            <button type="button" class="social-icon"><img src="multimedia/twittericon.png" alt="Twitter birdie icon"></button>
+            <button type="button" class="social-icon"><img src="multimedia/Icon-Medium.png" alt="Medium icon"></button>             
           </div>
-          <p>karlavdelgadof@gmail.com</p>
-        </footer> 
+          <p class="work-text"><img src="multimedia/down-arrow.png" alt="Gray down arrow">Work</p>
+        </div> 
+        <div class="work-element">
+          <p class="work-text"><img src="multimedia/down-arrow.png" alt="Gray down arrow">Work</p>
+        </div>        
+      </section>
+      <section class="recent-works">
+        <h2 class="recent-works-header-hidden">MY RECENT WORK</h2>
+        <h2 class="recent-works-header">My recent work</h2>
+        <article class="work-card">
+          <div class="image-placeholder"></div>
+          <div class="work-content">
+            <h3 class="work-header">Multi-Post Stories</h3>
+            <p class="work-p">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+            <ul class="tags-section">
+              <li class="tag"><a href="#">css</a></li>
+              <li class="tag"><a href="#">html</a></li>
+              <li class="tag"><a href="#">bootstrap</a></li>
+              <li class="tag ruby-tag"><a href="#">Ruby</a></li>
+            </ul>
+            <button type="button" class="work-card-button">See Project</button>
+          </div>
+        </article>
+        <article class="work-card left-block">
+          <div class="image-placeholder left-side"></div>
+          <div class="work-content">
+            <h3 class="work-header">Multi-Post Stories</h3>
+            <p class="work-p">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+            <ul class="tags-section">
+              <li class="tag"><a href="#">css</a></li>
+              <li class="tag"><a href="#">html</a></li>
+              <li class="tag"><a href="#">bootstrap</a></li>
+              <li class="tag ruby-tag"><a href="#">Ruby</a></li>
+            </ul>
+            <button type="button" class="work-card-button">See Project</button>
+          </div>
+        </article>
+        <article class="work-card">
+          <div class="image-placeholder"></div>
+          <div class="work-content">
+            <h3 class="work-header">Multi-Post Stories</h3>
+            <p class="work-p">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+            <ul class="tags-section">
+              <li class="tag"><a href="#">css</a></li>
+              <li class="tag"><a href="#">html</a></li>
+              <li class="tag"><a href="#">bootstrap</a></li>
+              <li class="tag ruby-tag"><a href="#">Ruby</a></li>
+            </ul>
+            <button type="button" class="work-card-button">See Project</button>
+          </div>
+        </article>
+        <article class="work-card left-block">
+          <div class="image-placeholder left-side"></div>
+          <div class="work-content">
+            <h3 class="work-header">Multi-Post Stories</h3>
+            <p class="work-p">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+            <ul class="tags-section">
+              <li class="tag"><a href="#">css</a></li>
+              <li class="tag"><a href="#">html</a></li>
+              <li class="tag"><a href="#">bootstrap</a></li>
+              <li class="tag ruby-tag"><a href="#">Ruby</a></li>
+            </ul>
+            <button type="button" class="work-card-button">See Project</button>
+          </div>
+        </article>        
+      </section>
+      <section class="contact-us">
+        <div class="contact-us-text">
+          <h2 class="contact-header-hidden">Let's chat!</h2>
+          <h2 class="contact-header">CONTACT US</h2>
+          <p class="contact-p">If you have an application you are interested in developing, a feature that you need built or a project that
+              needs coding. I'd love to help with it!</p>
+        </div>
+        <form action="https://formspree.io/f/mayvvvrn" method="post" class="contact-form">
+          <ul class="contact-inputs">
+            <li>
+              <input class="small-text" type="text" name="user_name" placeholder="First and Last Name" maxlength="30" required>
+            </li>
+            <li>
+              <input class="small-text" type="email" name="user_email" placeholder="example1@gmail.com" required>
+            </li>
+            <li>
+              <textarea class="msg" name="user_message" maxlength="500" placeholder="Enter the message here" required></textarea>
+            </li>
+            <li class="submit-container">
+              <button class="contact-submit" type="submit">Send</button>
+            </li>
+          </ul>
+        </form>
+      </section>
+      <footer class="footer">
+        <div class="social-media-hidden">
+          <button type="button" class="social-icon"><img src="multimedia/githubicon.png" alt="Github cat icon"></button>
+          <button type="button" class="social-icon"><img src="multimedia/linkedinicon.png" alt="Linkedin icon"></button>
+          <button type="button" class="social-icon"><img src="multimedia/angelist1.png" alt="Peace hand sign icon"></button>
+          <button type="button" class="social-icon"><img src="multimedia/twittericon.png" alt="Twitter birdie icon"></button>
+          <button type="button" class="social-icon"><img src="multimedia/Icon-Medium.png" alt="Medium icon"></button>
+        </div>
+        <div class="social-media">
+          <button type="button" class="social-icon"><img src="multimedia/githubicon.png" alt="Github cat icon"></button>
+          <button type="button" class="social-icon"><img src="multimedia/linkedinicon.png" alt="Linkedin icon"></button>
+          <button type="button" class="social-icon"><img src="multimedia/angelist1.png" alt="Peace hand sign icon"></button>
+          <button type="button" class="social-icon"><img src="multimedia/twittericon.png" alt="Twitter birdie icon"></button>
+          <button type="button" class="social-icon"><img src="multimedia/Icon-Medium.png" alt="Medium icon"></button>             
+        </div>
+        <p>karlavdelgadof@gmail.com</p>
+      </footer> 
     </body>
 </html>
