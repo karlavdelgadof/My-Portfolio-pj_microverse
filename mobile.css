@@ -53,7 +53,7 @@ hr {
   color: #ffff;
 }
 
-.header-hidden {
+.nav-bar {
   display: none;
 }
 
@@ -456,16 +456,16 @@ button,
   }
 
   .main-page-header {
-    display: none;
-  }
-
-  .header-hidden {
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #ffff;
     padding: 0 142px;
     margin-bottom: 0;
+  }
+
+  .open-menu {
+    display: none;
   }
 
   .nav-bar {
@@ -496,10 +496,6 @@ button,
   }
 
   .logo {
-    padding: 10px 0;
-  }
-
-  .open-menu {
     padding: 10px 0;
   }
 
