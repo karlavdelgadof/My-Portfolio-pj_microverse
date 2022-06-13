@@ -107,7 +107,7 @@ hr {
   font-size: 20px;
   text-align: center;
   color: #c8c8d4;
-  width: 327px;
+  width: 90%;
   height: auto;
   align-self: center;
   margin: 0;
@@ -423,7 +423,7 @@ button,
   font-weight: 500;
 }
 
-@media screen and (min-device-width: 768px) {
+@media screen and (min-width: 768px) {
   body {
     background-image:
       url("/multimedia/circle-1-header.svg"),
@@ -529,7 +529,7 @@ button,
   }
 
   .about-text-links {
-    padding: 0 354px;
+    padding: 0 30%;
   }
 
   .about-links {
