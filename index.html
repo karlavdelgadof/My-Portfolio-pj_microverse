@@ -14,15 +14,19 @@
           <h1 class="logo"><a href="#">Karla Delgado</a></h1>
           <nav class="nav-bar">
             <ul class="nav-links">
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
             <button type="button" class="message"><img src="multimedia/message-icon.svg" alt="Letter icon"></button>
           </nav>
-          <button type="button" class="open-menu"><img src="multimedia/Icon-Menu.svg" alt="Hamburger menu icon"></button>
+          <div class="hmg-menu">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
       </header>
-      <section class="headline">
+      <section class="headline" id="about">
         <!--All the divs added down below contain other elements inside for flex-related styling purposes-->
         <div class="headline-text">
           <h1 class="name">Karla Delgado</h1>
@@ -87,7 +91,7 @@
           <p class="work-text"><img src="multimedia/down-arrow.png" alt="Gray down arrow">Work</p>
         </div>        
       </section>
-      <section class="recent-works">
+      <section class="recent-works" id="portfolio">
         <h2 class="recent-works-header-hidden">MY RECENT WORK</h2>
         <h2 class="recent-works-header">My recent work</h2>
         <article class="work-card">
@@ -147,7 +151,7 @@
           </div>
         </article>        
       </section>
-      <section class="contact-us">
+      <section class="contact-us" id="contact">
         <div class="contact-us-text">
           <h2 class="contact-header-hidden">Let's chat!</h2>
           <h2 class="contact-header">CONTACT US</h2>
@@ -187,6 +191,7 @@
           <button type="button" class="social-icon"><img src="multimedia/Icon-Medium.png" alt="Medium icon"></button>             
         </div>
         <p>karlavdelgadof@gmail.com</p>
-      </footer> 
+      </footer>
+      <script src="index.js"></script>
     </body>
 </html>
