@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #191765;
   font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -48,12 +52,52 @@ hr {
 
 .main-page-header {
   display: flex;
+  position: fixed;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   color: #ffff;
+  background-color: #191765;
 }
 
-.nav-bar {
+.overlay-menu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  margin: 0;
+  padding: 20px 30px;
+  left: -150%;
+  width: 84%;
+  gap: 2em;
+  height: 100vh;
+  background-color: #191765;
+  background-image:
+    url("/multimedia/shape-mobile-menu-2.svg"),
+    url("multimedia/shape-mobile-menu-1.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top 50px left, right bottom 80px;
+  transition: 0.3s;
+}
+
+.nav-links-hidden {
+  display: none;
+}
+
+.nav-links li {
+  font-size: 24px;
+  font-weight: 500;
+  display: inline-flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.overlay-menu.active {
+  left: 0;
+}
+
+.message {
   display: none;
 }
 
@@ -64,11 +108,45 @@ hr {
   margin: 0;
 }
 
-.open-menu {
-  display: flex;
-  background: none;
-  border: none;
-  padding: 10px 30px;
+.hmg-menu {
+  display: block;
+  cursor: pointer;
+  padding-right: 2em;
+  align-self: flex-end;
+}
+
+.close {
+  align-self: flex-end;
+}
+
+.close.active {
+  padding: 0;
+  display: block;
+  cursor: pointer;
+  padding-right: 2em;
+  align-self: flex-end;
+}
+
+.line {
+  display: block;
+  background-color: #edecff;
+  width: 20px;
+  height: 1px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.close .line:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.close .line:nth-child(2) {
+  opacity: 0;
+}
+
+.close .line:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
 }
 
 .headline {
@@ -466,9 +544,14 @@ button,
     color: #ffff;
     padding: 0 142px;
     margin-bottom: 0;
+    width: 82%;
   }
 
-  .open-menu {
+  .close {
+    display: none;
+  }
+
+  .hmg-menu {
     display: none;
   }
 
@@ -477,7 +560,11 @@ button,
     gap: 20px;
   }
 
-  .nav-links {
+  .overlay-menu {
+    display: none;
+  }
+
+  .nav-links-hidden {
     display: flex;
     gap: 20px;
     font-size: 0.93rem;
