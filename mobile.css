@@ -77,7 +77,7 @@ hr {
     url("/multimedia/shape-mobile-menu-1.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: top 50px left, right bottom;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .nav-links-hidden {
