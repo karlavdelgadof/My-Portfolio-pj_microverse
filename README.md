@@ -16,7 +16,7 @@ This project is a Website version of my portfolio created for job searching as a
 - Twitter: [@twitterhandle](https://twitter.com/karlavdelgadof)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/karla-delgado-613a32239/)
 
-👤 Raúl Ospina
+:busts_in_silhouette: Raúl Ospina
 
 - GitHub: [@githubhandle](https://github.com/raminka13)
 - Twitter: [@twitterhandle](https://twitter.com/raminka13)
