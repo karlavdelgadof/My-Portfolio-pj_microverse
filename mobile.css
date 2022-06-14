@@ -74,9 +74,9 @@ hr {
   background-color: #191765;
   background-image:
     url("/multimedia/shape-mobile-menu-2.svg"),
-    url("multimedia/shape-mobile-menu-1.svg");
+    url("/multimedia/shape-mobile-menu-1.svg");
   background-repeat: no-repeat, no-repeat;
-  background-position: top 50px left, right bottom 80px;
+  background-position: top 50px left, right bottom;
   transition: 0.3s;
 }
 
