@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #191765;
   font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -48,12 +52,52 @@ hr {
 
 .main-page-header {
   display: flex;
+  position: fixed;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   color: #ffff;
+  background-color: #191765;
 }
 
-.header-hidden {
+.overlay-menu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  margin: 0;
+  padding: 20px 30px;
+  left: -150%;
+  width: 84%;
+  gap: 2em;
+  height: 100vh;
+  background-color: #191765;
+  background-image:
+    url("/multimedia/shape-mobile-menu-2.svg"),
+    url("multimedia/shape-mobile-menu-1.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top 50px left, right bottom 80px;
+  transition: 0.3s;
+}
+
+.nav-links-hidden {
+  display: none;
+}
+
+.nav-links li {
+  font-size: 24px;
+  font-weight: 500;
+  display: inline-flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.overlay-menu.active {
+  left: 0;
+}
+
+.message {
   display: none;
 }
 
@@ -64,40 +108,45 @@ hr {
   margin: 0;
 }
 
-.typewriter {
-  overflow: hidden;
-  border-right: 0.1rem solid #7d73fc;
-  white-space: nowrap;
-  margin: 0;
-  animation: typing 3s steps(24) alternate infinite, blink-caret 0.75s step-end infinite;
+.hmg-menu {
+  display: block;
+  cursor: pointer;
+  padding-right: 2em;
+  align-self: flex-end;
 }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: auto;
-  }
+.close {
+  align-self: flex-end;
 }
 
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-
-  50% {
-    border-color: #7d73fc;
-  }
+.close.active {
+  padding: 0;
+  display: block;
+  cursor: pointer;
+  padding-right: 2em;
+  align-self: flex-end;
 }
 
-.open-menu {
-  display: flex;
-  background: none;
-  border: none;
-  padding: 10px 30px;
+.line {
+  display: block;
+  background-color: #edecff;
+  width: 20px;
+  height: 1px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.close .line:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.close .line:nth-child(2) {
+  opacity: 0;
+}
+
+.close .line:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
 }
 
 .headline {
@@ -136,7 +185,7 @@ hr {
   font-size: 20px;
   text-align: center;
   color: #c8c8d4;
-  width: 327px;
+  width: 90%;
   height: auto;
   align-self: center;
   margin: 0;
@@ -383,15 +432,19 @@ button,
 .contact-inputs {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
   padding: 0;
   gap: 24px;
   justify-content: center;
 }
 
+.contact-inputs li {
+  width: 100%;
+}
+
 .small-text,
 .msg {
-  width: 95%;
+  width: 94%;
   height: 48px;
   border-radius: 5px;
   font-family: 'Roboto', sans-serif;
@@ -401,7 +454,7 @@ button,
 }
 
 .msg {
-  height: 148px;
+  height: auto;
   padding-top: 15px;
 }
 
@@ -460,7 +513,7 @@ button,
   font-weight: 500;
 }
 
-@media screen and (min-device-width: 768px) {
+@media screen and (min-width: 768px) {
   body {
     background-image:
       url("/multimedia/circle-1-header.svg"),
@@ -493,16 +546,21 @@ button,
   }
 
   .main-page-header {
-    display: none;
-  }
-
-  .header-hidden {
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #ffff;
     padding: 0 142px;
     margin-bottom: 0;
+    width: 82%;
+  }
+
+  .close {
+    display: none;
+  }
+
+  .hmg-menu {
+    display: none;
   }
 
   .nav-bar {
@@ -510,7 +568,11 @@ button,
     gap: 20px;
   }
 
-  .nav-links {
+  .overlay-menu {
+    display: none;
+  }
+
+  .nav-links-hidden {
     display: flex;
     gap: 20px;
     font-size: 0.93rem;
@@ -575,10 +637,6 @@ button,
     padding: 10px 0;
   }
 
-  .open-menu {
-    padding: 10px 0;
-  }
-
   .headline {
     padding: 130px 142px 114px;
     gap: 88px;
@@ -609,7 +667,7 @@ button,
   }
 
   .about-text-links {
-    padding: 0 354px;
+    padding: 0 30%;
   }
 
   .about-links {
