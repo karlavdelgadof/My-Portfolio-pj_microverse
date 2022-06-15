@@ -277,6 +277,34 @@ button,
   justify-content: center;
 }
 
+#modal-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #191765cc;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  transition: all 1s ease-out;
+}
+
+#modal-container.show {
+  display: block;
+  opacity: 100%;
+  pointer-events: auto;
+}
+
+#modal {
+  margin: 2em 1.5em 1em;
+  width: 86%;
+  height: 92%;
+  background-color: rgba(255, 255, 255, 0.2);
+  mix-blend-mode: screen;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  border: 2px solid white;
+}
+
 .recent-works-header-hidden {
   color: #9490ff;
   font-size: 40px;
@@ -301,8 +329,8 @@ button,
 }
 
 .image-placeholder {
-  height: 236px;
-  width: auto;
+  height: auto;
+  width: 100%;
   background: #f9f9f9;
 }
 
@@ -741,11 +769,10 @@ button,
 
   .left-side {
     order: 1;
-    width: 100%;
+    width: 105%;
   }
 
   .image-placeholder {
-    width: 100%;
     height: auto;
     transition: 2s;
   }
@@ -757,8 +784,9 @@ button,
   .work-content {
     display: flex;
     flex-direction: column;
-    gap: 28px;
+    gap: 26px;
     align-items: flex-start;
+    justify-content: space-between;
   }
 
   .work-header {
