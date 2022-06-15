@@ -41,13 +41,13 @@ const projectSection = document.querySelector('.recent-works');
 let pBtn;
 
 
-function createCard(projectCards) {
+function createCard(project) {
   const pCard = document.createElement('article');
   pCard.classList.add('work-card');
 
   const img = document.createElement('img');
   img.classList.add('image-placeholder');
-  img.setAttribute('src', projectCards.img)
+  img.setAttribute('src', project.img)
   img.setAttribute('alt', 'Project thumbnail')
   pCard.appendChild(img);
 
@@ -56,15 +56,13 @@ function createCard(projectCards) {
     img.classList.add('left-side')
   }
 
-
-
   const pContent = document.createElement('div');
   pContent.classList.add('work-content');
   pCard.appendChild(pContent);
 
   const pHeader = document.createElement('h3');
   pHeader.classList.add('work-header');
-  pHeader.textContent = projectCards.title;
+  pHeader.textContent = project.title;
   pContent.appendChild(pHeader);
 
   const pText = document.createElement('p');
@@ -76,7 +74,7 @@ function createCard(projectCards) {
   pTags.classList.add('tags-section');
   pContent.appendChild(pTags);
 
-  projectCards.tags.forEach((_element, index) => {
+  project.tags.forEach((_element, index) => {
     const tag = document.createElement('li');
     tag.classList.add('tag');
     pTags.appendChild(tag);
@@ -84,10 +82,9 @@ function createCard(projectCards) {
     const anchorTag = document.createElement('a');
     anchorTag.setAttribute('href', '#');
 
-    anchorTag.textContent = projectCards.tags[index];
+    anchorTag.textContent = project.tags[index];
     tag.appendChild(anchorTag);
-
-  })
+  });
   
   pBtn = document.createElement('button');
   pBtn.setAttribute('type', 'button');
