@@ -192,6 +192,8 @@ function cleanModal() {
   }
 }
 
+const blur = document.getElementById('blur');
+
 function openModal() {
   modalContainer.classList.add('show');
   window.onclick = (event) => {
