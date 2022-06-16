@@ -569,6 +569,9 @@ button,
 
 .contact-form {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-inputs {
@@ -578,6 +581,7 @@ button,
   padding: 0;
   gap: 24px;
   justify-content: center;
+  width: 100%;
 }
 
 .contact-inputs li {
@@ -604,6 +608,14 @@ button,
 .msg:hover {
   border: 2px solid #7d73fc;
   box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+}
+
+.email-error-msg {
+  outline: 1.5px solid red;
+  border: 1.5px solid red;
+  background-color: rgb(247, 156, 156);
+  box-shadow: 0 8px 16px rgba(255, 155, 155, 0.48);
+  padding: 0.5em;
 }
 
 .submit-container {
@@ -1085,6 +1097,12 @@ button,
   .msg {
     font-size: 1.06rem;
     outline: 1px solid #5e42d7;
+  }
+
+  .email-error-msg {
+    outline: 1.5px solid red;
+    background-color: rgb(247, 156, 156);
+    box-shadow: 0 8px 16px rgba(255, 155, 155, 0.48);
   }
 
   .small-text:hover,
