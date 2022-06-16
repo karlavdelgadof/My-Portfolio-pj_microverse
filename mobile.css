@@ -496,6 +496,7 @@ button,
 
 .work-card-button {
   display: flex;
+  cursor: pointer;
   font-family: inherit;
   color: #edecff;
   background-color: #7d73fc;
@@ -913,6 +914,7 @@ button,
   }
 
   .modal-close {
+    cursor: pointer;
     margin-top: 2rem;
   }
 

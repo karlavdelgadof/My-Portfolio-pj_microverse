@@ -6,7 +6,7 @@ const projectCards = [
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.',
     tags: ['html', 'Ruby on rails', 'css'],
     link: 'https://karlavdelgadof.github.io/My-Portfolio-pj_microverse/',
-    source: 'https://github.com/karlavdelgadof/My-Portfolio-pj_microverse'
+    source: 'https://github.com/karlavdelgadof/My-Portfolio-pj_microverse',
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const projectCards = [
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.',
     tags: ['html', 'Ruby on rails', 'css'],
     link: 'https://karlavdelgadof.github.io/My-Portfolio-pj_microverse/',
-    source: 'https://github.com/karlavdelgadof/My-Portfolio-pj_microverse'
+    source: 'https://github.com/karlavdelgadof/My-Portfolio-pj_microverse',
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const projectCards = [
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.',
     tags: ['html', 'Ruby on rails', 'css'],
     link: 'https://karlavdelgadof.github.io/My-Portfolio-pj_microverse/',
-    source: 'https://github.com/karlavdelgadof/My-Portfolio-pj_microverse'
+    source: 'https://github.com/karlavdelgadof/My-Portfolio-pj_microverse',
   },
   {
     id: 4,
@@ -33,27 +33,25 @@ const projectCards = [
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.',
     tags: ['html', 'Ruby on rails', 'css'],
     link: 'https://karlavdelgadof.github.io/My-Portfolio-pj_microverse/',
-    source: 'https://github.com/karlavdelgadof/My-Portfolio-pj_microverse'
-  }
+    source: 'https://github.com/karlavdelgadof/My-Portfolio-pj_microverse',
+  },
 ];
 
 const projectSection = document.querySelector('.recent-works');
 
-
 function createCard(project) {
   const pCard = document.createElement('article');
   pCard.classList.add('work-card');
-  
 
   const img = document.createElement('img');
   img.classList.add('image-placeholder');
-  img.setAttribute('src', project.img)
-  img.setAttribute('alt', 'Project thumbnail')
+  img.setAttribute('src', project.img);
+  img.setAttribute('alt', 'Project thumbnail');
   pCard.appendChild(img);
 
   if (project.id % 2 === 0) {
     pCard.classList.add('left-block');
-    img.classList.add('left-side')
+    img.classList.add('left-side');
   }
 
   const pContent = document.createElement('div');
@@ -67,7 +65,7 @@ function createCard(project) {
 
   const pText = document.createElement('p');
   pText.classList.add('work-p');
-  pText.textContent = 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.'
+  pText.textContent = 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.';
   pContent.appendChild(pText);
 
   const pTags = document.createElement('ul');
@@ -85,13 +83,13 @@ function createCard(project) {
     anchorTag.textContent = project.tags[index];
     tag.appendChild(anchorTag);
   });
-  
+
   const pBtn = document.createElement('button');
   pBtn.setAttribute('type', 'button');
-  pBtn.setAttribute('id', project.id)
+  pBtn.setAttribute('id', project.id);
   pBtn.classList.add('work-card-button');
-  pBtn.textContent = 'See Project'
-  
+  pBtn.textContent = 'See Project';
+
   pContent.appendChild(pBtn);
 
   projectSection.appendChild(pCard);
@@ -101,8 +99,11 @@ projectCards.forEach(createCard);
 
 const modalContainer = document.getElementById('modal-container');
 
+function closeModal() {
+  modalContainer.classList.remove('show');
+}
+
 function createModal(id) {
-  projectIdModal = id;
   // Search the project with the same id in the projects array
   const project = projectCards.find((project) => Number(project.id) === Number(id));
   const modal = document.createElement('div');
@@ -116,31 +117,31 @@ function createModal(id) {
   const modalHeader = document.createElement('h3');
   modalHeader.classList.add('modal-header');
   modalHeader.textContent = project.title;
-  modalHeaderContainer.appendChild(modalHeader)
+  modalHeaderContainer.appendChild(modalHeader);
 
   const modalClose = document.createElement('div');
   modalClose.classList.add('modal-close');
   modalHeaderContainer.appendChild(modalClose);
-  modalClose.addEventListener('click', closeModal); 
+  modalClose.addEventListener('click', closeModal);
 
-  for (let i = 0; i < 3; i+= 1) {
+  for (let i = 0; i < 3; i += 1) {
     const closeSpan = document.createElement('span');
-    closeSpan.classList.add('line')
+    closeSpan.classList.add('line');
     modalClose.appendChild(closeSpan);
   }
 
   const modalImg = document.createElement('img');
   modalImg.classList.add('modal-image');
-  modalImg.setAttribute('src', project.img)
-  modalImg.setAttribute('alt', 'Project thumbnail')
+  modalImg.setAttribute('src', project.img);
+  modalImg.setAttribute('alt', 'Project thumbnail');
   modal.appendChild(modalImg);
-  
+
   const modalContent = document.createElement('div');
   modalContent.classList.add('modal-content');
   modal.appendChild(modalContent);
 
   const modalP = document.createElement('p');
-  modalP.classList.add('modal-p')
+  modalP.classList.add('modal-p');
   modalP.textContent = project.description;
   modalContent.appendChild(modalP);
 
@@ -182,7 +183,6 @@ function createModal(id) {
   srcIcon.setAttribute('alt', 'Github icon');
   srcBtn.appendChild(srcIcon);
   modalBtnContainer.appendChild(srcBtn);
-
 }
 
 function cleanModal() {
@@ -194,16 +194,12 @@ function cleanModal() {
 
 function openModal() {
   modalContainer.classList.add('show');
-  window.onclick = function (event) {
+  window.onclick = (event) => {
     if (event.target === modalContainer) {
       modalContainer.classList.remove('show');
     }
   };
 }
-
-function closeModal() {
-  modalContainer.classList.remove('show')
-};
 
 projectSection.addEventListener('click', (e) => {
   const elementId = e.target.id;
@@ -214,20 +210,6 @@ projectSection.addEventListener('click', (e) => {
     openModal();
   }
 });
-
-// 
-// const projectImg = document.getElementById('pj-img');
-// const content = document.getElementById('modal-content');
-// const btnLive = document.getElementById('live');
-// const btnSrc = document.getElementById('source');
-// const btn1 = document.getElementById('p1')
-
-// btn1.addEventListener('click', () => {
-//   modal.classList.add('show');
-// });
-
-
-// From here - Mobile-menu functionality
 
 const hmgIcon = document.querySelector('.hmg-menu');
 const overlayMenu = document.querySelector('.overlay-menu');
