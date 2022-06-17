@@ -236,3 +236,24 @@ document.querySelectorAll('.close').forEach((n) => n
     hmgIcon.classList.remove('active');
     overlayMenu.classList.remove('active');
   }));
+
+// Contact Form Validation
+
+const submitBtn = document.getElementById('submit-btn');
+const error = document.getElementById('error-msg');
+const emailInput = document.getElementById('email-at');
+
+error.style.color = 'red';
+error.style.padding = '0.5em';
+error.style.textAlign = 'center';
+
+submitBtn.onclick = (event) => {
+  const emailValue = document.getElementById('email-at').value;
+  const lowerEmail = emailValue.toLowerCase();
+
+  if (emailValue !== lowerEmail) {
+    error.textContent = 'Please check the email format';
+    emailInput.classList.toggle('email-error-msg');
+    event.preventDefault();
+  }
+};
