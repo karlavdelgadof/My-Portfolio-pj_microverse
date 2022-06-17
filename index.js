@@ -257,3 +257,32 @@ submitBtn.onclick = (event) => {
     event.preventDefault();
   }
 };
+
+// LocalStorage input data preservation
+const inputFields = document.getElementById('contact');
+const nameInput = document.getElementById('name-input');
+const msgInput = document.getElementById('msg-input');
+
+inputFields.addEventListener('input', () => {
+  const nameValue =  nameInput.value;
+  const email = emailInput.value;
+  const msg = msgInput.value;
+
+  // make email format error disappear with new entry
+  error.textContent = '';
+  emailInput.classList.remove('email-error-msg');
+
+
+  if (!nameValue && !email && !msg) {
+    return;
+  }
+
+  inputData = {
+    nameValue,
+    email,
+    msg,
+  }
+
+  localStorage.setItem('inputData', JSON.stringify(inputData));
+});
+
