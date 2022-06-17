@@ -12,19 +12,19 @@ This project is a Website version of my portfolio created for job searching as a
 
 [My Portfolio Website](https://karlavdelgadof.github.io/My-Portfolio-pj_microverse/)
 
-## Authors
+## Authors & Collaborators
 
 👤 Karla Delgado
 
-- GitHub: [@githubhandle](https://github.com/karlavdelgadof)
-- Twitter: [@twitterhandle](https://twitter.com/karlavdelgadof)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/karla-delgado-613a32239/)
+- GitHub: [@karlavdelgadof](https://github.com/karlavdelgadof)
+- Twitter: [@karlavdelgadof](https://twitter.com/karlavdelgadof)
+- LinkedIn: [Karla Delgado](https://www.linkedin.com/in/karla-delgado-613a32239/)
 
 :busts_in_silhouette: Raúl Ospina
 
-- GitHub: [@githubhandle](https://github.com/raminka13)
-- Twitter: [@twitterhandle](https://twitter.com/raminka13)
-- LinkedIn: [LinkedIn](http://linkedin.com/in/raul-ospina-83232614)
+- GitHub: [@raminka13](https://github.com/raminka13)
+- Twitter: [@raminka13](https://twitter.com/raminka13)
+- LinkedIn: [Raul Ospina](http://linkedin.com/in/raul-ospina-83232614)
 
 ## Show your support
 
