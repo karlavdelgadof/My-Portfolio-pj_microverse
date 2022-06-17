@@ -263,15 +263,16 @@ const inputFields = document.getElementById('contact');
 const nameInput = document.getElementById('name-input');
 const msgInput = document.getElementById('msg-input');
 
+let inputData;
+
 inputFields.addEventListener('input', () => {
-  const nameValue =  nameInput.value;
+  const nameValue = nameInput.value;
   const email = emailInput.value;
   const msg = msgInput.value;
 
   // make email format error disappear with new entry
   error.textContent = '';
   emailInput.classList.remove('email-error-msg');
-
 
   if (!nameValue && !email && !msg) {
     return;
@@ -281,8 +282,16 @@ inputFields.addEventListener('input', () => {
     nameValue,
     email,
     msg,
-  }
+  };
 
   localStorage.setItem('inputData', JSON.stringify(inputData));
 });
 
+inputData = JSON.parse(localStorage.getItem('inputData'));
+
+// Data Store in localStorage
+if (inputData) {
+  nameInput.value = inputData.nameValue;
+  emailInput.value = inputData.email;
+  msgInput.value = inputData.msg;
+}
